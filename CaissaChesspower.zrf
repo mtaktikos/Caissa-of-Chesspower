@@ -45,7 +45,7 @@
 )
 
 (define Board-Definitions
-  (image "images\wiedem\Chess8x8.bmp")
+  (image "images\chess\Chess8x8.bmp")											
   (grid
      (start-rectangle 5 5 53 53)
      (dimensions
@@ -198,7 +198,10 @@ When making these moves the rook cannot move over any intervening pieces.")
 	  (help "King: steps like an Amazon")
       (description "")
       (image White "images\Chess\wking.bmp"  Black "images\Chess\bking.bmp")
- 	  (moves (Rook-moves)(slide ne)
+ 	  (moves 
+	     (Rook-moves)
+		 (Knight-moves)
+		 (slide ne)
          (slide nw)
          (slide se)
          (slide sw))
